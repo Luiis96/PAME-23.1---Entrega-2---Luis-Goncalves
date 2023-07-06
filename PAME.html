@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        html, body{
+            height: 100%;
+        }
+
+        .barraCima{
+            width: 100%;
+            height: 5%;
+            background-color: black;
+            position: relative;
+        }
+
+        .imagemFluxo{
+            width: 100%;
+            height: 95%;
+            bottom: 0;
+            background-image: url(https://power-reptile-d0b.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd6e4492c-6b1e-41e5-b68a-9f930d471438%2FFoto_Fluxo.jpg?id=f17b0069-5e8f-4fec-8023-634869802ba0&table=block&spaceId=5b4c7f6a-6b90-428f-bb60-8aefe0ce809e&width=2000&userId=&cache=v2);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+        }
+
+        .circulo{
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border-radius: 50%;
+            transform: translate(50%, 25%);
+        }
+
+        .imagemSpotify{
+            width: 25px; 
+            height: 25px;
+            background-image: url(https://power-reptile-d0b.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F722a333e-3146-48fc-860b-26c751a2e1f1%2FSpotify-Icon.png?id=af3a8c15-4614-44de-b5fb-47728ecd3ae1&table=block&spaceId=5b4c7f6a-6b90-428f-bb60-8aefe0ce809e&width=1020&userId=&cache=v2);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+        }
+
+        .nomeSpotfluxo{
+            width: 25px;
+            height: 25px;
+            color: white;
+            transform: translate(100%, 15%);
+        }
+
+        .camada{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 1));
+            width: 100%;
+            height: 95%;
+            top: 5%;
+            backdrop-filter: blur(2px);
+        }
+
+        .container{
+            width: 435px;
+            height: 670px;
+            background-color: black;
+            position: relative;
+            bottom: -4%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            border-radius: 1%;
+        }
+
+        .textoEntrar{
+            width: 240px;
+            color: white;
+            position: absolute;
+            bottom: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cadastroGoogle{
+            width: 200px;
+            height: 22px;
+            background-color: black;
+            position: absolute;
+            bottom: 77%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            border: solid 1px white;
+        }
+
+        .continuarGoogle{
+            width: 138px;
+            color: white;
+            position: absolute;
+            bottom: 78.5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cadastroFacebook{
+            width: 200px;
+            height: 22px;
+            background-color: black;
+            position: absolute;
+            bottom: 73%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            border: solid 1px white;
+        }
+
+        .continuarFacebook{
+            width: 151px;
+            color: white;
+            position: absolute;
+            bottom: 74.3%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cadastroApple{
+            width: 200px;
+            height: 22px;
+            background-color: black;
+            position: absolute;
+            bottom: 69%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            border: solid 1px white;
+        }
+
+        .continuarApple{
+            width: 130px;
+            color: white;
+            position: absolute;
+            bottom: 70.5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cadastroCelular{
+            width: 200px;
+            height: 30px;
+            background-color: black;
+            position: absolute;
+            bottom: 63.25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            border: solid 1px white;
+        }
+
+        .continuarCelular{
+            width: 170px;
+            color: white;
+            position: absolute;
+            bottom: 63.9%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class = "imagemFluxo"></div>
+
+    <div class = "barraCima">
+        <div class = "circulo">
+            <div class = "imagemSpotify"></div>
+            <div class = "nomeSpotfluxo"><h4>Spotfluxo</h4></div>
+        </div>
+    </div>
+
+    <div class = "camada"></div>
+
+    <div class = "container">
+        <div class = "textoEntrar"><h2>Entrar no Spotfluxo</h2></div>
+        <div class = "cadastroGoogle"></div>
+        <div class = "continuarGoogle"><h6>Continuar Com O Google</h6></div>
+        <div class = "cadastroFacebook"></div>
+        <div class = "continuarFacebook"><h6>Continuar Com O Facebook</h6></div>
+        <div class = "cadastroApple"></div>
+        <div class = "continuarApple"><h6>Continuar Com A Apple</h6></div>
+        <div class = "cadastroCelular"></div>
+        <div class = "continuarCelular"><h6>Continuar Com Um Número De Telefone</h6></div>
+    </div>
+    
+</body>
+</html>
