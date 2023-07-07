@@ -63,12 +63,11 @@
 
         .camada{
             position: absolute;
-            top: 0;
             left: 0;
+            top: 5%;
             background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 1));
             width: 100%;
             height: 95%;
-            top: 5%;
             backdrop-filter: blur(2px);
         }
 
@@ -80,7 +79,7 @@
             bottom: -4%;
             left: 50%;
             transform: translate(-50%, 0%);
-            border-radius: 1%;
+            border-radius: 7px;
         }
 
         .textoEntrar{
@@ -101,7 +100,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 10px;
-            border: solid 1px white;
+            border: solid 1px rgb(81, 81, 81);
         }
 
         .continuarGoogle{
@@ -109,7 +108,16 @@
             color: white;
             position: absolute;
             bottom: 78.5%;
-            left: 50%;
+            left: 51%;
+            transform: translate(-50%, -50%);
+        }
+
+        .google{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            bottom: 79.7%;
+            left: 31.35%;
             transform: translate(-50%, -50%);
         }
 
@@ -122,7 +130,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 10px;
-            border: solid 1px white;
+            border: solid 1px rgb(81, 81, 81);
         }
 
         .continuarFacebook{
@@ -130,7 +138,16 @@
             color: white;
             position: absolute;
             bottom: 74.3%;
-            left: 50%;
+            left: 51.5%;
+            transform: translate(-50%, -50%);
+        }
+
+        .facebook{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            bottom: 75.65%;
+            left: 31.25%;
             transform: translate(-50%, -50%);
         }
 
@@ -143,7 +160,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 10px;
-            border: solid 1px white;
+            border: solid 1px rgb(81, 81, 81);
         }
 
         .continuarApple{
@@ -151,7 +168,16 @@
             color: white;
             position: absolute;
             bottom: 70.5%;
-            left: 50%;
+            left: 51%;
+            transform: translate(-50%, -50%);
+        }
+
+        .apple{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            bottom: 71.6%;
+            left: 31.25%;
             transform: translate(-50%, -50%);
         }
 
@@ -164,7 +190,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 10px;
-            border: solid 1px white;
+            border: solid 1px rgb(81, 81, 81);
         }
 
         .continuarCelular{
@@ -177,6 +203,214 @@
             text-align: center;
         }
 
+        .usuario{
+            height: 44px;
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+
+        .usuario > label{
+            font-size: 6pt;
+            color: white;
+        }
+
+        .usuario > input{
+            background-color: black;
+            width: 200px;
+            height: 25px;
+            border: solid 1.5px rgb(81, 81, 81);
+            border-radius: 2px;
+            color: rgb(81, 81, 81);
+            font-size: 8pt;
+        }
+
+        .senha{
+            height: 44px;
+            position: absolute;
+            left: 50%;
+            bottom: 42%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+        
+        .senha > label{
+            font-size: 6pt;
+            color: white;
+        }
+
+        .senha > input{
+            background-color: black;
+            width: 200px;
+            height: 25px;
+            border: solid 1.5px rgb(81, 81, 81);
+            border-radius: 2px;
+            color: rgb(81, 81, 81);
+            font-size: 8pt;
+        }
+
+        #icone{
+            position: absolute;
+            top: 65%;
+            left: 90%;
+            background: url("https://power-reptile-d0b.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffe51c403-edb8-4979-ba33-a7073d6006b3%2FBlind.png?id=4c0822a5-f486-41dc-a8ed-494fea41adf9&table=block&spaceId=5b4c7f6a-6b90-428f-bb60-8aefe0ce809e&width=190&userId=&cache=v2");
+            background-size: cover;
+            width: 15px;
+            height: 15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        #icone.hide{
+            background-size: cover;
+            background: url("https://power-reptile-d0b.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F00fcac16-4713-4936-a84b-3a3bc3c3aae8%2FEye.png?id=40d5a583-9015-4c01-b019-9c805edc0a37&table=block&spaceId=5b4c7f6a-6b90-428f-bb60-8aefe0ce809e&width=190&userId=&cache=v2");
+        }
+
+        .lembrar{
+            font-size: 8pt;
+            color: white;
+            position: absolute;
+            height: 8px;
+            width: 62px;
+            left: 35%;
+            top: 57.5%;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 30px;
+            height: 18px;
+            border-radius: 17px;
+            overflow: hidden;
+            left: 30.5%;
+            top: 58%;
+            transform: translate(-50%, -50%);
+        }
+
+        .switch > input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(81, 81, 81);
+            -webkit-transition: .4s;
+            transition: .4s;
+            height: 18px;
+            width: 30px;
+            border-radius: 17px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 12px;
+            width: 12px;
+            left: 4px;
+            bottom: 3px;
+            background-color: black;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 10%;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #01d355;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(12px);
+            -ms-transform: translateX(12px);
+            transform: translateX(12px);
+        }
+
+        .entrar{
+            width: 45%;
+            height: 5%;
+            position: absolute;
+            left: 50%;
+            top: 68%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+
+        .entrar > h6{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .entrar > label{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color:#01d355;
+            border-radius: 25px;
+        }
+
+        .entrar > input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .esqueceuSenha{
+            font-size: 12pt;
+            color: white;
+            position: absolute;
+            height: 1%;
+            width: 27.3%;
+            left: 50%;
+            top: 75%;
+            transform: translate(-50%, -50%);
+        }
+
+        .semConta{
+            font-size: 12pt;
+            color: rgb(81, 81, 81);
+            position: absolute;
+            height: 1%;
+            width: 59%;
+            left: 50%;
+            top: 85%;
+            transform: translate(-50%, -50%);
+        }
+
+        .semConta h6 u{
+            color: white;
+        }
+
+        .envioConcluido{
+            width: 100%;
+            position: absolute;
+            top: 90%;
+            display: none;
+        }
+
+        .envioConcluido > h3{
+            color: #01d355;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
     </style>
 </head>
 <body>
@@ -196,13 +430,75 @@
         <div class = "textoEntrar"><h2>Entrar no Spotfluxo</h2></div>
         <div class = "cadastroGoogle"></div>
         <div class = "continuarGoogle"><h6>Continuar Com O Google</h6></div>
+        <div class = "google"> <img src = "https://power-reptile-d0b.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Faf28affd-068d-4e07-969a-e804a93c93a9%2FGoogle-Icon.png?id=7bd9fc54-60ee-4d50-9572-dea66b305942&table=block&spaceId=5b4c7f6a-6b90-428f-bb60-8aefe0ce809e&width=1020&userId=&cache=v2" width = "10px" height = "10px"></div>
         <div class = "cadastroFacebook"></div>
         <div class = "continuarFacebook"><h6>Continuar Com O Facebook</h6></div>
+        <div class = "facebook"> <img src = "https://power-reptile-d0b.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F16849521-dd96-41f1-b269-0a1aecb5d17c%2FFacebook-Icon.png?id=a0841cfc-a1eb-41d0-b112-fb6e526a79d3&table=block&spaceId=5b4c7f6a-6b90-428f-bb60-8aefe0ce809e&width=1020&userId=&cache=v2" width = "10px" height = "10px"></div>
         <div class = "cadastroApple"></div>
         <div class = "continuarApple"><h6>Continuar Com A Apple</h6></div>
+        <div class = "apple"> <img src = "https://power-reptile-d0b.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc9c2e10c-8d35-4297-9a5e-c3cb9b93e921%2FApple-Icon.png?id=7f8d1585-d472-4a73-b595-f85b7cda0d7b&table=block&spaceId=5b4c7f6a-6b90-428f-bb60-8aefe0ce809e&width=1020&userId=&cache=v2" width = "10px" height = "10px"></div>
         <div class = "cadastroCelular"></div>
         <div class = "continuarCelular"><h6>Continuar Com Um Número De Telefone</h6></div>
+        <div class = "usuario">
+            <label for="usuario">Usuário</label>
+            <input type = "text" id="usuario" placeholder="E mail ou nome de usuário">
+        </div>
+        <div class = "senha">
+            <label for = "senha">Senha</label>
+            <input type = "password" id="senha" placeholder="Senha">
+            <div id = "icone" onclick="Mostrar()"></div>
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="toggleButton">
+            <span class="slider"></span>
+        </label>
+        <div class = "lembrar"><h6>Lembrar de mim</h6></div>
+        <div class = "entrar">
+            <label for="enviar"></label>
+            <input type="submit" id="enviar">
+            <h6>Entrar</h6>
+        </div>
+        <div class = "esqueceuSenha"><h6><u>Esqueceu sua senha?</u></h6></div>
+        <div class = "semConta"><h6>Não tem uma conta? <u>Inscrever-se no Spotfluxo</u></h6></div>
+        <div class = "envioConcluido" id="envioConcluido">
+            <h3>Envio concluído</h3>
+        </div>
     </div>
+
+    <script>
+        const password = document.getElementById("senha");
+        const icone = document.getElementById("icone");
+
+        function Mostrar(){
+            if(password.type === "password"){
+                password.setAttribute("type", "text");
+                icone.classList.add("hide")
+            }
+            else{
+                password.setAttribute("type", "password");
+                icone.setAttribute.remove("hide");
+            }
+        }
+
+        var lembrar = "Não";
+        var enviarButton = document.getElementById("enviar");
+        var envioConcluidoDiv = document.getElementById("envioConcluido");
+
+        toggleButton.addEventListener("change", function() {
+            if (this.checked) {
+                lembrar = "Sim";
+            } else {
+                lembrar = "Não";
+            }
+        });
+
+        enviarButton.addEventListener("click", function() {
+            var usuario = document.getElementById("usuario").value;
+            var senha = document.getElementById("senha").value;
+            alert("Usuário: " + usuario + "\nSenha: " + senha + "\nLembrar de mim: " + lembrar);
+            envioConcluidoDiv.style.display = "block"; 
+        });
+    </script>
     
 </body>
 </html>
